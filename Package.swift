@@ -55,6 +55,7 @@ if isLinux || ProcessInfo.processInfo.environment.keys.contains("GRPC_USE_OPENSS
 let package = Package(
   name: "SwiftGRPC",
   products: [
+    .executable(name: "protoc-gen-swiftgrpc", targets: ["protoc-gen-swiftgrpc"]),
     .library(name: "SwiftGRPC", targets: ["SwiftGRPC"]),
     .library(name: "SwiftGRPCNIO", targets: ["SwiftGRPCNIO"]),
   ],
